@@ -1,6 +1,9 @@
 # Zebra KC401 向け NFC VAS デモ 実行ガイド
 
 UPDATE:2026/11/01
+Source Info: https://techdocs.zebra.com/nfc-vas/latest/guide/demo/
+
+<br/>
 
 本ドキュメントは、Zebra の対話型 Android キオスクコンピュータ **KC401** において、**NFC VAS SDK デモアプリケーション（NFC Ticket Demo）** をセットアップし、Apple Wallet（Apple VAS）、Google Wallet（Google Smart Tap）、Samsung Wallet のデジタルパスおよび各種 NFC タグの読み取り検証を行うための手順書です。
 
@@ -154,5 +157,3 @@ adb install -r "ZebraVasDemoApp-x.x.x.apk"
 | **LED バーが赤色に点滅している** | 給電能力不足（PoE クラス不適合） | KC401 は **PoE+ (802.3at / 30W)** 以上が必要です。通常の 15W PoE ハブでは給電不足警告（赤点滅）となるため、PoE+ スイッチまたは付属 DC 電源アダプタをご使用ください。 |
 | **パスデータが暗号化されたまま表示される** | 秘密鍵（Private Key）の不一致 | デモアプリ既定の Zebra Collector ID パス以外を使用している場合、該当プロファイル用の復号キーがアプリ側に設定されているか確認してください。 |
 
----# Demo-06_Zebra-Kiosk_NFC Ticket (ECP2.0) Demo
-ぜｂらKosk端末でApple Wallet_Gogle Walletをタッチ検知するデモ
